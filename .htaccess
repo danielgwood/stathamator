@@ -1,6 +1,10 @@
 RewriteEngine On
 RewriteBase /
 
+# www redirect
+RewriteCond %{HTTP_HOST} ^www\.stathamator\.com [NC]
+RewriteRule ^(.*)$ http://stathamator.com/$1 [L,R=301]
+
 # Non-bootstrapped directories
 RewriteRule ^assets/(.*) assets/$1 [L]
 

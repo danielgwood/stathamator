@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Non-bootstrapped directories
+RewriteRule ^assets/(.*) assets/$1 [L]
+
+# Bootstrap
+RewriteRule ^$ index.php [L]
+RewriteRule ^(.*) index.php [L]

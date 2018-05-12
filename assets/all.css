@@ -1,0 +1,182 @@
+/* Resets and fixes */
+* {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+canvas {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* Typography & Layout */
+html {
+    background-color: #fffff7;
+    color: #373737;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+}
+
+h1 {
+    color: #888;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.stathe {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0 0 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0 0 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+.starring {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.5em;
+}
+
+h2 {
+    display: block;
+    max-width: 20em;
+    margin: 0 auto 2rem auto;
+    font-family: 'Share', 'Arial Black', serif;
+    font-size: 6.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    max-width: 45rem;
+    margin: 0 auto;
+    font-size: 2em;
+    line-height: 1.4;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    margin: 0 0.25rem;
+    padding: 10px;
+    background-color: white;
+    color: #555;
+    text-align: center;
+    -webkit-box-shadow: 0 0 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0 0 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0 0 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:hover {
+    border-color: #bbb;
+}
+
+.button:active {
+    box-shadow: none;
+}
+
+.button img {
+    display: block;
+    margin: 0;
+    line-height: 0;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+footer small {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* (XL) */
+@media only screen and (min-width: 996px) {
+
+}
+
+/* (L) */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+
+}
+
+/* (M) */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 1.5rem 0;
+    }
+}
+
+/* (XS) */
+@media only screen and (max-width: 479px) {
+    header {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .stathe {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 4em;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    footer {
+        margin-top: 1.5rem;
+    }
+}

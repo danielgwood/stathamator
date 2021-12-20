@@ -26,13 +26,13 @@ if (preg_match('#^/([a-zA-Z]{7})$#', $_SERVER['REQUEST_URI'], $params)) {
     // Looks like we got a match...
     $id = $params[1];
 
-    $titleIndex = array_search($id{0}, $urlCharsArray);
-    $leadInIndex = array_search($id{1}, $urlCharsArray);
-    $jobIndex = array_search($id{2}, $urlCharsArray);
-    $nameIndex = array_search($id{3}, $urlCharsArray);
-    $storyIndex = array_search($id{4}, $urlCharsArray);
-    $motivationIndex = array_search($id{5}, $urlCharsArray);
-    $leadOutIndex = array_search($id{6}, $urlCharsArray);
+    $titleIndex = array_search($id[0], $urlCharsArray);
+    $leadInIndex = array_search($id[1], $urlCharsArray);
+    $jobIndex = array_search($id[2], $urlCharsArray);
+    $nameIndex = array_search($id[3], $urlCharsArray);
+    $storyIndex = array_search($id[4], $urlCharsArray);
+    $motivationIndex = array_search($id[5], $urlCharsArray);
+    $leadOutIndex = array_search($id[6], $urlCharsArray);
 
     $existing = $titleIndex < count($titles) &&
                 $leadInIndex < count($leadIns) &&
@@ -71,13 +71,13 @@ $moviePlot .= getString($leadOuts, $leadOutIndex);
 
 // Generate the URL for this film
 $uniqueUrl = '';
-$uniqueUrl .= $urlChars{$titleIndex};
-$uniqueUrl .= $urlChars{$leadInIndex};
-$uniqueUrl .= $urlChars{$jobIndex};
-$uniqueUrl .= $urlChars{$nameIndex};
-$uniqueUrl .= $urlChars{$storyIndex};
-$uniqueUrl .= $urlChars{$motivationIndex};
-$uniqueUrl .= $urlChars{$leadOutIndex};
+$uniqueUrl .= $urlChars[$titleIndex];
+$uniqueUrl .= $urlChars[$leadInIndex];
+$uniqueUrl .= $urlChars[$jobIndex];
+$uniqueUrl .= $urlChars[$nameIndex];
+$uniqueUrl .= $urlChars[$storyIndex];
+$uniqueUrl .= $urlChars[$motivationIndex];
+$uniqueUrl .= $urlChars[$leadOutIndex];
 
 // Share message for Twitter
 $shareMessage = 'Jason Statham stars in ' . strtoupper($movieTitle) . ': ' . truncateString($moviePlot, 65, true) . ' http://' . $_SERVER['HTTP_HOST'] . '/' . $uniqueUrl . ' #stathamator';

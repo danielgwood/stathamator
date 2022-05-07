@@ -111,6 +111,16 @@ $shareMessage = 'Jason Statham stars in ' . strtoupper($movieTitle) . ': ' . tru
 
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-435VM9ES2B"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-435VM9ES2B');
+        </script>
     </head>
     <body>
         <header>
@@ -139,17 +149,5 @@ $shareMessage = 'Jason Statham stars in ' . strtoupper($movieTitle) . ': ' . tru
 
         <!-- JS -->
         <script> history.replaceState(null, null, '<?php echo $uniqueUrl; ?>'); </script>
-
-        <!-- Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-15405999-3', 'auto');
-          ga('send', 'pageview');
-
-        </script>
     </body>
 </html>

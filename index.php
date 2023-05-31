@@ -112,14 +112,14 @@ $shareMessage = 'Jason Statham stars in ' . strtoupper($movieTitle) . ': ' . tru
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-435VM9ES2B"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-          gtag('config', 'G-435VM9ES2B');
+        gtag('config', 'G-435VM9ES2B');
         </script>
     </head>
     <body>
